@@ -11,14 +11,13 @@ pin_number = 21 # Change this to your desired GPIO pin number
 GPIO.setup(pin_number, GPIO.OUT)
 
 try:
-    while True:
-        GPIO.output(pin_number, GPIO.LOW)  # Set pin HIGH
-        print("Pin is HIGH")
-        time.sleep(1)                        # Wait for 1 second
-        
-        GPIO.output(pin_number, GPIO.HIGH)   # Set pin LOW
-        print("Pin is LOW")
-        time.sleep(1)                        # Wait for 1 second
+    GPIO.output(pin_number, GPIO.LOW)  # Set pin HIGH
+    print("Pin is HIGH")
+    time.sleep(1)                        # Wait for 1 second
+
+    GPIO.output(pin_number, GPIO.HIGH)   # Set pin LOW
+    print("Pin is LOW")
+    time.sleep(1)                        # Wait for 1 second
 
 except KeyboardInterrupt:
     pass  # Exit the loop on Ctrl+C
