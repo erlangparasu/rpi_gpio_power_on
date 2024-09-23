@@ -1,1 +1,2 @@
-/usr/bin/python3 power_on.py 
+#!/bin/sh
+/usr/bin/python3 power_on.py
